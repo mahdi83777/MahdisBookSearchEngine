@@ -1,6 +1,6 @@
 const { gql } = require("apollo-server-express");
 
-// ！means that the field is non-nullable.
+// ！means that the field is non-nullable
 const typeDefs = gql`
   type User {
     _id: ID
@@ -44,5 +44,6 @@ const typeDefs = gql`
     removeBook(bookId: String!): User
   }
 `;
+
 
 module.exports = typeDefs;
